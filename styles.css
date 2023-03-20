@@ -1,0 +1,39 @@
+/* Masonry Layout project stylesheet*/
+
+main {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div#masonry {
+    column-count: 3;
+    column-gap: 14px;
+}
+
+div.item {
+    margin-bottom: 14px;
+    box-shadow: 5px 5px 7px rgb(120, 114, 114);}
+
+/* Media Query for tablet or smaller screens */
+
+@media only screen and (max-width: 800px) {
+    div#masonry {
+        column-count: 2;
+        column-gap: 14px;
+    }
+
+    div.item {
+        margin-bottom: 14px;
+        box-shadow: 4px 4px 6px rgb(120, 114, 114);
+    }
+}
